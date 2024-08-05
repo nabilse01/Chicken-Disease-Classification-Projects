@@ -55,6 +55,5 @@ class PrepareBaseModel:
 
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
-        if not path.suffix == '.keras':
-            path = path.with_suffix('.keras')
         model.save(path)
+
