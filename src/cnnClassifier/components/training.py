@@ -38,7 +38,6 @@ class Training:
                 shear_range=0.2,
                 zoom_range=0.2,
                 horizontal_flip=True,
-                fill_mode="nearest",
                 **datagenerator_kwargs
             )
         else:
